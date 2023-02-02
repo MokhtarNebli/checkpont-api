@@ -1,0 +1,44 @@
+.main{
+    background-image: url(../background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+.users{
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 45px;
+    justify-content: center;
+    margin-bottom: 30px;
+ 
+}
+
+@media (max-width: 1000px){
+    .users{
+        grid-template-columns: repeat(1, 450px);
+    }
+}
+
+.user{
+    border: 2px solid blue ;
+    border-radius: 5px;
+    padding: 5px;;
+    position: relative;
+    background-color: #5daece;
+}
+
+.user:hover{
+    border: 3px solid rgb(214, 113, 19) ;
+    padding: 8px;
+}
+
+h1{
+    text-align: center;
+    padding: 10px ;
+    color: #fe6600;
+}
+
+span {
+    font-weight: bold;
+    text-decoration:underline;
+}
